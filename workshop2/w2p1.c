@@ -1,3 +1,9 @@
+/*
+*****************************************************************************
+                          Workshop - #2 (P1)
+*****************************************************************************
+*/
+
 #define _CRT_SECURE_NO_WARNINGS
 
 #include <stdio.h>
@@ -6,11 +12,10 @@ int main(void)
 {
     const double TAX = 0.13;
     const char patSize = 'S';
-
+    
     float price_s, price_m, price_l; 
     int subtotal_p, total_p, qty_p, price_s_i, taxes_p;
-	
-
+    
 	printf("Set Shirt Prices\n");
 	printf("================\n");
     printf("Enter the price for a SMALL shirt: $");
@@ -20,29 +25,28 @@ int main(void)
     printf("Enter the price for a LARGE shirt: $");
     scanf("%f", &price_l);
     printf("\n");
-
+    
     printf("Shirt Store Price List\n");
     printf("======================\n");
     printf("SMALL\t : $%.2f \n", price_s);
     printf("MEDIUM\t : $%.2f \n", price_m);
     printf("LARGE\t : $%.2f \n\n", price_l);
-    printf("Patty's shirt size is %c \n", patSize);
+    printf("Patty's shirt size is %c \n", patSize);   
+    
     printf("Number of shirts Patty is buying: ");
     scanf("%d", &qty_p);
-	  printf("\n");
-
+	printf("\n"); 
+        
     printf("Patty's shopping cart...\n");
-	  printf("Contains  : %d shirts\n", qty_p);
-
-   
-    price_s_i = (price_s*100.001);
+	printf("Contains  : %d shirts\n", qty_p);
+	
+	price_s_i = (price_s*100.000+0.5);
     subtotal_p = qty_p*price_s_i;
-    taxes_p = ((subtotal_p)*TAX)*1.0001;
-    total_p = subtotal_p + taxes_p;
-
+    taxes_p = ((subtotal_p)*TAX)*1.000+0.5;
+    total_p = subtotal_p + taxes_p;    
+    
     printf("Sub-total : $%8.4f\n", subtotal_p/100.00);
     printf("Taxes     : $%8.4f\n", taxes_p/100.00);
     printf("Total     : $%8.4f\n", total_p/100.00);
-
     return 0;
 }
