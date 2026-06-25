@@ -42,29 +42,29 @@ int main(void)
 	printf("The average of all prices is: $%.4f\n\n", average_price);
 	
 	printf("About Relational and Logical Expressions!\n");
-  printf("========================================\n");
-  printf("1. These expressions evaluate to TRUE or FALSE\n");
-  printf("2. FALSE: is always represented by integer value 0\n");
-  printf("3. TRUE: is represented by any integer value other than 0\n\n");
+    printf("========================================\n");
+  	printf("1. These expressions evaluate to TRUE or FALSE\n");
+  	printf("2. FALSE: is always represented by integer value 0\n");
+ 	printf("3. TRUE: is represented by any integer value other than 0\n\n");
     
-  printf("Some Data Analysis...\n");
-  printf("=====================\n");	
+  	printf("Some Data Analysis...\n");
+  	printf("=====================\n");	
 	printf("1. Is product 1 taxable? -> %d\n\n", product1_tax == 'Y');
-  printf("2. Are products 2 and 3 both NOT taxable (N)? -> %d\n\n",
+  	printf("2. Are products 2 and 3 both NOT taxable (N)? -> %d\n\n",
 			((product2_tax == 'N') && (product3_tax == 'N')));
-  printf("3. Is product 3 less than test_value ($%.2f)? -> %d\n\n",
+  	printf("3. Is product 3 less than test_value ($%.2f)? -> %d\n\n",
 			test_value, (product3_price < test_value) );
-  printf("4. Is the price of product 3 more than both product 1 and 2 combined? -> %d\n\n",
+  	printf("4. Is the price of product 3 more than both product 1 and 2 combined? -> %d\n\n",
 			product3_price > (product1_price + product2_price));
-  printf("5. Is the price of product 1 equal to or more than the price difference\n");
-  printf("   of product 3 LESS product 2? -> %d (price difference: $%.2f)\n\n",
+  	printf("5. Is the price of product 1 equal to or more than the price difference\n");
+  	printf("   of product 3 LESS product 2? -> %d (price difference: $%.2f)\n\n",
 			(product1_price >= (product3_price - product2_price)),
 			(product3_price - product2_price));    
-  printf("6. Is the price of product 2 equal to or more than the average price? -> %d\n\n",
+  	printf("6. Is the price of product 2 equal to or more than the average price? -> %d\n\n",
 			product2_price >= average_price);
 	printf("7. Based on product ID, product 1 is unique -> %d\n\n",
 			(product1_id != product2_id) && (product1_id != product3_id));
-  printf("8. Based on product ID, product 2 is unique -> %d\n\n",
+  	printf("8. Based on product ID, product 2 is unique -> %d\n\n",
 			(product1_id != product2_id) && (product2_id != product3_id));
 	printf("9. Based on product ID, product 3 is unique -> %d\n\n",
 			(product3_id != product2_id) && (product1_id != product3_id));		
