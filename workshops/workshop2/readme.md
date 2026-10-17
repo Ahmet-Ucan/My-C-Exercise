@@ -1,6 +1,6 @@
 # C Programming: Computations & Data Types (Workshop #2)
 
-This repository contains two C console applications focused on fundamental data types, arithmetic operators, type casting, and output formatting precision[cite: 5]. The projects simulate a retail shopping environment 
+This repository contains two C console applications focused on fundamental data types, arithmetic operators, type casting, and output formatting precision. The projects simulate a retail shopping environment 
 to demonstrate how to handle monetary calculations accurately in C.
 
 ## 📂 Project Contents
